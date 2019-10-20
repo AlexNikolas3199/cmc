@@ -1,0 +1,427 @@
+@font-face {
+    font-family: "Futura PT";
+    src:url('fonts/FuturaPT-Light.ttf');
+}
+@font-face {
+    font-family: "FuturaPT-Medium";
+    src:url('fonts/FuturaPT-Medium.ttf');
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Futura PT";
+	color:#fff;
+}
+header{
+	position: relative;
+	min-height:200px;
+	width: 100%;
+	border-top:3px solid #1B345C;
+	background: 
+	linear-gradient(
+     rgba(27,52,92,0.7), rgba(0, 0, 0, 0.3)),
+     url(images/2642690.jpg);
+     background-size: cover;
+     background-position: center;
+}
+header  p{
+	margin: 0
+}
+header .headerContacts{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:5%;
+	left:1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+header .headerContacts div{
+	padding: 0;
+	margin:0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .headerContacts div img{
+	margin-right: 10px;
+	height: 20px
+}
+header .headerLanguages{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top:5%;
+	right:1%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+header .headerLanguages img{
+	margin:0 5px;
+	height: 20px
+}
+header .headerNav{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	margin-right: 30px;
+}
+header .headerNav a{
+	margin:0 10px 0 10px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px;
+	transition: 0.3s;
+}
+header .headerNav a:hover{
+	font-weight: bold
+}
+header .headerNav a img.logo{
+	margin-bottom: -5px;
+	height: 100px
+}
+header h1{
+	color:#fff;
+    font-family: 'FuturaPT-Medium';
+    font-weight: 500;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}
+footer{
+	position: relative;
+	background: gray;
+	padding: 25px 0 50px 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	background: 
+	linear-gradient(
+     rgba(27,52,92,0.7), rgba(27,52,92, 0.7)),
+     url(images/slider_havana3.jpg);
+     background-size: cover;
+     background-position: center;
+}
+footer img.logo{
+	position: absolute;
+	top:46px;
+	right:50px;
+	height: 100px
+}
+footer .footerContacts{
+	margin:0 0 0 80px;
+	display: flex;
+	flex-direction: column;
+	width: 300px
+}
+footer .footerContacts h3{
+	margin:2px 0 15px 0;
+	padding: 5px 10px;
+	width: 100vw;
+	font-size: 24px;
+	z-index: 1
+}
+footer .footerContacts h3:before,
+footer .footerContacts h3:after{
+	content: '';
+	margin-top:-5px;
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	background: #FFF;
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: solid rgba(27, 52, 92,0.87);
+	border-width: 0 10px;
+}
+footer .footerContacts h3:before{
+	margin-left:-100%;
+}
+footer .footerContacts h3:after{
+	margin-right:-100%;
+}
+footer .footerContacts p{
+	margin: 10px 0;
+	width: 200px
+}
+footer .footerContacts div{
+	padding: 0;
+	margin: 0;
+	width: 70%;
+	display: flex;
+	align-items: center;
+}
+footer .footerContacts div img{
+	margin-right: 10px;
+	height: 20px
+}
+footer .footerNav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-right: 140px;
+	margin-left:70px;
+}
+footer .footerNav p{
+	letter-spacing:-3px 
+}
+footer .footerNav a{
+	margin: 0 10px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 20px
+}
+.heading{
+	color: rgba(27, 52, 92, 0.9);
+	font-size: 36px;
+	text-transform: uppercase;
+	text-align: center;
+	overflow: hidden;
+}
+
+.heading:before,
+.heading:after{
+	content: '';
+	margin-top:-10px;
+	display: inline-block;
+	width: 100%;
+	height: 3px;
+	background: rgba(27, 52, 92, 0.6);
+	box-sizing: border-box;
+	vertical-align: middle;
+	border: solid #FFF;
+	border-width: 0 10px;
+}
+.heading:before{
+	margin-left:-100%;
+}
+.heading:after{
+	margin-right:-100%;
+}
+.flex_center{
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.flex_center .projectcard{
+	margin: 20px;
+	height:250px;
+	width: 250px;
+	border-radius: 30px;
+	background:
+	linear-gradient(0deg, #1B345C 0%, rgba(255, 255, 255, 0.17) 100%),
+	url(images/bgcard1.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: flex-end;
+}
+.flex_center .projectcard:nth-child(2){
+	background:
+	linear-gradient(0deg, #1B345C 0%, rgba(255, 255, 255, 0.17) 100%),
+	url(images/bgcard2.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard:nth-child(3){
+	background:
+	linear-gradient(0deg, #1B345C 0%, rgba(255, 255, 255, 0.17) 100%),
+	url(images/bgcard3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard:nth-child(4){
+	background:
+	linear-gradient(0deg, #1B345C 0%, rgba(255, 255, 255, 0.17) 100%),
+	url(images/bgcard4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard:nth-child(5){
+	background:
+	linear-gradient(0deg, #1B345C 0%, rgba(255, 255, 255, 0.17) 100%),
+	url(images/bgcard5.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard:nth-child(6){
+	background:
+	linear-gradient(0deg, #1B345C 0%,rgba(255, 255, 255, 0.17)100%),
+	url(images/bgcard4.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard:nth-child(8){
+	background:
+	linear-gradient(0deg, #1B345C 0%,rgba(255, 255, 255, 0.17)100%),
+	url(images/slider_havana3.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.flex_center .projectcard div{
+	margin: 0px 80px 20px 15px
+}
+.flex_center .projectcard div span{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 27px
+}
+.flex_center .projectcard div p{
+	margin: 0 0 8px 0;
+}
+.flex_center .projectcard div a{
+	padding: 3px 8px;
+	text-decoration: none;
+	color:#fff;
+	border:solid 1.5px #fff;
+	border-radius: 8px;
+}
+.flex_center .newscards{
+	width: 370px;
+	overflow:hidden;
+}
+.flex_center .newscards:nth-child(2){
+	margin:0 20px;
+}
+.flex_center .newscards .img{
+	width: 100%;
+	height: 250px;
+}
+.flex_center .newscards:nth-child(1) .img{
+	background:url(images/newsimg3.png);
+	background-size: cover;
+	background-position: center;
+}
+.flex_center .newscards:nth-child(2) .img{
+	background:url(images/newsimg1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.flex_center .newscards:nth-child(3) .img{
+	background:url(images/newsimg2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.flex_center .newscards h4{
+	margin: 15px 0;
+	color:#323232;
+	font-size: 24px;
+	line-height: 31px;
+}
+.flex_center .newscards span{
+	color: #6C6C6C;
+	font-size: 18px;
+	font-weight:bold
+}
+.flex_center .newscards p{
+	margin: 15px 0;
+	color:#323232;
+	font-size: 18px;
+	line-height: 23px;
+}
+.СМСDevelopment{
+	width: 100%;
+	min-height: 90vh;
+	margin: 0 auto;
+	background: url(images/main_bg_2.jpg) no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.СМСDevelopment h3{
+	margin: 40px 0;
+	text-align: center;
+	font-size: 24px;
+	color: #323232;
+	font-weight: 900;
+}
+.СМСDevelopment p{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 158.2%;
+	text-align: center;
+	color: #323232;
+	max-width: 1090px;
+	margin: 0 auto;
+}
+
+.СМСDevelopment .flex_center{
+	margin-top:120px;
+	width: 100%
+}
+.flex_center .ray{
+	position: relative;
+	width: 150px;
+	height: 2px;
+	background: rgba(27, 52, 92, 0.8);
+	margin: 100px 0
+}
+.flex_center .ray:before{
+	content: '';
+	position: absolute;
+	top:-8px;
+	left: 0;
+	background: #495D7D;
+	width: 9.2px;
+	height: 9.2px;
+	border: solid white 5.5px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px #495D7D
+}
+.flex_center .ray:last-child{
+	width: 0;
+}
+.flex_center .ray:after{
+	content: attr(data-inf);
+	min-width:200px;
+	display: inline-block;
+	color:#323232;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 21px;
+	position: relative;
+	top:-100px;
+}
+.flex_center .ray:nth-child(5):after{
+	min-width:300px;
+}
+.flex_center .ray:nth-child(even):after{
+	top:40px;
+}
+.textimg{
+	width:100%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.textimg .lefttext{
+	margin: 30px;
+	width: 35%;
+	color:#323232;
+	font-size: 18px;
+	line-height: 151.2%;
+}
+.textimg .rightimg{
+	width: 45%;
+	height: 470px;
+	background: url(images/2871966.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.lasttext{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 158.2%;
+	text-align: center;
+	color: #323232;
+	max-width: 1090px;
+	margin: 100px auto;
+}
